@@ -1,0 +1,31 @@
+/*
+ * Name: Anthony Battle
+ * Description: program calculates the distance between two points using the distance formula
+ * Version: 1.0
+ * Date: 9/30/19
+ */
+import java.util.Scanner;
+
+public class distance {
+
+	public static void main(String[] args) {
+		System.out.println("ID001");
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.print("Enter x1:");
+		double x1 = in.nextDouble();
+		System.out.print("Enter x2:");
+		double x2 = in.nextDouble();
+		
+		System.out.print("Enter y1:");
+		double y1 = in.nextDouble();
+		System.out.print("Enter y2:");
+		double y2 = in.nextDouble();
+		
+		double distance = Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2);
+		System.out.print("The distance is: " + Math.pow(distance, 0.5));
+
+	}
+
+}
